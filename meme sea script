@@ -1,0 +1,40 @@
+_G.Settings = {
+    Config = {
+        -- multi equip weapon
+        ["RDWP"] = true, -- Melee --> Sword --> Power
+        ["Melee"] = true,
+        ["Sword"] = true,
+        ["Power"] = true,
+
+        ["BusoHaki"] = true, -- auto buso
+        ["KenHaki"] = true,  -- auto ken
+        ["AutoRace"] = true, -- auto awaken race
+
+        ["DeleteSkill"] = false, -- delete effect skill
+        ["AutoTPSafe"] = true, --auto tp save
+        ["ModeHop"] = "FastHop", -- auto hop ("SaveHop" "FastHop")
+        ["TimeHop"] = 50, -- 50-100
+
+        --misc function
+        ["WhiteScreen"] = false, -- boost more fps
+        ["BoostFPS"] = true, -- supper low graphic
+
+        --webhook
+        ["SendWehook"] = true, -- true or false
+        ["ApiWebhhok"] = "https://discordapp.com/api/webhooks/1278505266660245524/Jo_BfJjluyE6s_ZPqMdfb3EhwDv-p4WBXdcVLLNN2odUxHrsssKUKLRNPrRc_peSoCDG", -- put your api webhook discord
+
+        -- auto skill
+        ["AutoSkill"] = true,
+        ["Z"] = true, -- skill z
+        ["X"] = true,  -- skill x
+        ["C"] = true,  -- skill c
+        ["V"] = true, -- skill v
+
+        --method farm player
+        ["SelectMethod"] = "Upper",  --("Behind","Below","Upper")
+        ["DistanceMon"] = 9, -- 0-10
+        ["SelectWeapon"] = "Sword", --(Melee, Sword, Power)
+    },
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TranVanBao1411/ElgatoHub/main/AutoBountyV1.lua"))()
